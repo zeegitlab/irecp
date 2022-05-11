@@ -1,0 +1,205 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.lx-header-signup {
+	.lx-header-top {
+		position: relative;
+	}
+}
+
+.lx-signup-sec {
+	height: 100vh;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.signup-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.form-group {
+			.form-control {
+				height: 46px;
+				width: 422px;
+				border-radius: 30px;
+				display: grid;
+				justify-content: center;
+			}	
+		}
+		.lx-signup-logo {
+			text-align: center;
+			margin-bottom: 50px;
+			.signup_svg {
+				height: 114px;
+				width: 127px;
+			}
+		}
+		.lx-signup-body {
+			width: 100%;
+			.lx-signup-form {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				.lx-two {
+					display: flex;
+					.form-control {
+						margin: 10px;
+						width: 100%;
+						height: 46px;
+						font-family: $fontfamily-mirage;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 20px;
+						border: 1px solid #000000;
+						color: #000000;
+						&::placeholder {
+							color: #000000;
+						}
+					}
+				}
+				.form-group {
+					margin-bottom: 30px;					
+					text-align: center;
+					label {
+						margin-left: 5px;
+						font-size: 16px;
+						line-height: 20px;
+						font-weight: 400;
+						font-family: $fontfamily-mirage;
+						color: #000;
+					}
+				}
+				.lx-btn-submit {
+					width: 422px;
+					height: 51px;
+					border-radius: 30px;
+					background: $main-primary-color;
+					border-color: $main-primary-color;
+					font-size: 16px;
+						line-height: 19px;
+						font-weight: 700;
+						text-transform: uppercase;
+				}
+			}
+		}
+		.lx-signup-forgot {
+			display: flex;
+			justify-content: center;
+			.form-control {
+				display: flex;
+				background: transparent;
+				border: none;
+				justify-content: space-between;
+			}
+			.lx-keep-signup {
+				.form-check-label {
+					font-family: $fontfamily-mirage;
+					font-size: 14px;
+					font-style: normal;
+					line-height: 20px;
+					letter-spacing: 0em;
+					text-align: left; 
+					color: $lx-0-color;
+					font-weight: 400;
+				}
+			}
+			.lx-forgot {
+				font-family: $fontfamily-mirage;
+				font-size: 14px;
+				font-style: normal;
+				line-height: 20px;
+				letter-spacing: 0em;
+				text-align: left; 
+				color: $lx-0-color;
+				font-weight: 400;
+			}
+		}
+		.lx-signup-help {
+			display: flex;
+			justify-content: center;
+			.form-control {
+				display: flex;
+				background: transparent;
+				border: none;
+				justify-content: space-between;
+				a {
+					font-family: $fontfamily-mirage;
+					font-size: 16px;
+					font-style: normal;
+					line-height: 21px;
+					letter-spacing: 0em;
+					text-align: left;
+					color: $lx-0-color;
+				}
+			}
+			.lx-signup {
+				width: 100%;
+				text-align: center;
+				font-size: 16px;
+					line-height: 20px;
+					font-weight: 400;
+					color: #000;
+				a {
+					color: $main-primary-color;
+					font-weight: 600;
+				}
+			}
+		}
+		.lx-store-link {   
+			 width: 100%;
+			display: flex;
+			justify-content: center;
+			.form-control {
+				display: flex;
+				background: transparent;
+				border: none;
+				justify-content: space-between;
+			}
+			.lx-store-btn {
+				.lx-store-img {
+					width: 169px;
+					height: 72px;
+				}
+			}
+		}
+	}
+}
+
+.lx-footer-sec {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, .9);
+	.lx-footer-container {
+		display: flex;
+		justify-content: space-between;
+		.lx-footer-terms {
+			font-family: $fontfamily-mirage;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: $lx-0-color;	
+		}
+		.lx-footer-social {
+			.lx-social {
+				margin: 0 8px;
+				svg {
+					height: 18px;
+					width: 18px;
+					path {						
+						fill: #626060;
+					}
+				}
+			}
+		}
+	}
+}

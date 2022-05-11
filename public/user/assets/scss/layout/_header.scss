@@ -1,0 +1,92 @@
+/*-------------------------------------------------
+ Header Style CSS
+---------------------------------------------------*/
+
+$header-bg-color: $white;
+$icon-color : $icon-color-1;
+$font-family : $fontfamily-lato;
+
+.site-container.nav-closed .header-logo {
+	width: 0;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	flex-basis: 100%;
+	background: $header-bg-color;
+	box-shadow: 0px 8px 15px rgba(103, 84, 226, 0.1);
+	z-index: 9;
+
+	.header-logo {
+		display: flex;
+		align-items: center;
+		width: 220px;
+		overflow: hidden;
+		transition: width 0.5s ease;
+		
+		.button-menu {
+			display: none;
+			border: 0;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+				border: none;
+			}
+			svg {
+				width: 25px;
+				path {
+					fill: $icon-color;
+				}
+			}
+		}
+
+		.logo-img {
+			height: 50px;
+			width: 50px;
+			min-height: 32px;
+			min-width: 32px;
+			margin: 0 20px 0 30px;
+
+			path {
+				fill: $icon-color;
+			}
+		}
+
+		.site-title {
+			color: $icon-color;
+			font-size: 24px;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
+	}
+
+	.wrapper-dropdown {
+		position: absolute;
+		right: 20px;
+		.user-info {
+			.profile-pic {
+				width: 36px;
+				margin-right: 10px;
+			}
+			.user-name {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;				
+				color: $color-003E76;
+				margin-right: 10px;
+			}
+			.drop-down-icon {
+				width: 14px;
+				height: 18px;
+			}
+		}
+		.user-drop-down {
+			display: none;
+		}
+	}
+}

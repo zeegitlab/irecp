@@ -1,0 +1,138 @@
+/*-------------------------------------------------
+  Certification Section CSS
+---------------------------------------------------*/
+.ir-certification {
+	position: relative;
+	.owl-carousel.owl-loaded {
+		margin-bottom: -20px;
+	}
+	&:before {
+		content: "";
+		width: 95%;
+		height: calc(50% + 52px);
+		margin: auto;
+		background-color: #F3FAFF;
+		position: absolute;
+		bottom: calc(50% - 52px);
+		left: 0;
+		right: 0;
+		border-radius: $border-radius-10;
+	}
+	.shape {
+		&:after {
+			width: 59px;
+			height: 129PX;
+			content: "";
+			background: url(../img/shape/1.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			z-index: 10;
+			position: absolute;
+			left: 140px;
+    		top: -60px;
+		}
+	}
+	.sec-title {
+		h2 {
+			text-align: center;
+		}
+	}
+	.ir-certi-slider {
+		.card-1 {
+			background: #FDE1F5;
+		}
+		.card-2 {
+			background: #FFF6EC;
+		}
+		.card-3 {
+			background: #E2FDE2;
+		}
+		.card-4 {
+			background: #FFEAE9;
+		}
+		.inner-card {
+			padding: 30px 20px;
+			background: $white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: $border-radius-10;
+			box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+			z-index: 10;
+			position: relative;
+			.certi-links {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+	.ir-certi-card {
+		padding: 20px;
+		border-radius: $border-radius-10;
+		&:after {
+			content: "";
+			width: 100%;
+			height: 50%;
+			background-color: $white;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		h3 {
+			margin: 30px 0;
+			font-size: 26px;
+			line-height: 28px;
+			font-weight: 700;
+		}
+		.certi-links {
+			a {
+				color: $blue-bg;
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: 900;
+			}
+			.re-certi {
+				color: #DF000E;
+			}
+		}
+	}
+	.owl-nav {
+		button {
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+			border-radius: $border-radius-30;
+			background: $blue-bg !important;
+			.svg-img {
+				path {
+					fill: $white;
+				}
+			}
+		}
+		button.disabled {
+			background: $white !important;
+			.svg-img {
+				path {
+					fill: $blue-bg;
+				}
+			}
+		}
+		.owl-prev {
+			left: -90px;
+		}
+		.owl-next {
+			right: -90px;
+		}
+	}
+}

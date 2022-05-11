@@ -1,0 +1,83 @@
+/*-------------------------------------------------
+ Sidebar Style CSS
+---------------------------------------------------*/
+
+$svg-icon-color : $icon-color-1;
+$sidebar-bg-color: $white;
+$sidebar-text-color: $white;
+$hover-bg-color : $hover-bg-color-1;
+$icon-color : $icon-color-1;
+$text-color : $font-color-1;
+$hover-icon-color : $white;
+$hover-text-color : $white;
+$font-family : $fontfamily-lato;
+
+.site-container.nav-closed .sidebar {
+	width: 0;
+}
+
+.sidebar {
+	height: 100%;
+	width: 300px;
+	box-sizing: border-box;
+	box-shadow: 0 0 2rem 0 rgb(0 0 0 / 5%);
+	overflow: hidden;
+	transition: width 0.5s ease;
+	background: $sidebar-bg-color;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+
+		li {
+			display: flex;
+			align-items: center;
+			margin: 5px 0;
+			a {
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				width: 100%;
+				padding: 10px;
+				white-space: nowrap;
+
+				svg {
+					width: 25px;
+					height: 25px;
+					path{
+						fill: $icon-color;
+					}
+				}
+				span {
+					margin-left: 16px;
+					width: 88px;
+					height: 22px;
+					font-family: $font-family;
+					font-style: normal;
+					color: $text-color;
+					font-weight: 600;
+					font-size: 18px;
+					line-height: 22px;
+				}
+
+				&.active,
+				&:hover {
+					background: $hover-bg-color;
+					color: $hover-text-color;
+					border-radius: 10px;
+
+					svg {
+						path{
+							fill:$hover-icon-color;
+						}
+					}
+
+					span {
+						color: $hover-text-color;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+/*-------------------------------------------------
+ Footer Style CSS
+---------------------------------------------------*/
+footer {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: $white;
+	.footer-text {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 30px;
+		color: $color-003E76;
+		margin-top: 10px;
+	}
+}

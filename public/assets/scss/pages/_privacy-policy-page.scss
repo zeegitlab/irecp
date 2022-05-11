@@ -1,0 +1,37 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.ir-pp-pg-head {
+	background-image: url('../../assets/img/bg/privacy-policy-bg.png');
+}
+.ir-pp-sec {
+	.ir-pp-content {
+		.sec-info {
+			margin-bottom: 50px;
+			.sec-title {
+				h3 {
+					font-weight: 700;
+					font-size: 36px;
+					line-height: 43px;
+					text-align: right;
+					color: $main-text-color;
+					margin-bottom: 20px;
+				}
+			}
+			.sec-desc {
+				p {
+					font-weight: 500;
+					font-size: 19px;
+					line-height: 28px;
+					
+					/* or 156% */
+					text-align: right;
+					
+					color: $text-666;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+

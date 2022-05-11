@@ -1,0 +1,957 @@
+/*-------------------------------------------------
+  Fonts Family & Style CSS
+---------------------------------------------------*/
+/*--  Lato  --*/
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/*-------------------------------------------------
+  Common Style CSS
+---------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  color: #777;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font-family: "Lato" !important;
+  font-weight: 400;
+  top: 0 !important;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Lato";
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  color: #023769;
+  line-height: 26px;
+}
+
+/**  Section spacing  **/
+.sec-p-t {
+  padding-top: 50px;
+}
+
+.sec-p-b {
+  padding-bottom: 50px !important;
+}
+
+.sec-p-tb {
+  padding: 50px 0;
+}
+
+.sec-m-t {
+  margin-top: 50px;
+}
+
+.sec-m-b {
+  margin-bottom: 50px;
+}
+
+.sec-m-tb {
+  margin: 50px 0;
+}
+
+.footer-p-tb {
+  padding: 100px 0;
+}
+
+.sec-p-tb-100 {
+  padding: 100px 0;
+}
+
+.sec-p-tb-50 {
+  padding: 50px 0;
+}
+
+.sec-m-b-100 {
+  margin-bottom: 100px;
+}
+
+.sec-m-tb-100 {
+  margin: 100px 0;
+}
+
+.sec-bg-blue {
+  background-color: #023769;
+}
+
+.mar-t-100 {
+  margin-top: 100px;
+}
+
+.pad-50 {
+  padding: 0 50px;
+}
+
+.pad-lr-50 {
+  padding: 0 50px;
+}
+
+.site-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+.site-container .page-content {
+  padding: 10px 20px;
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.site-container .page-content h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #222;
+}
+
+.main {
+  height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #F2FAFF;
+}
+
+/*-------------------------------------------------
+ Sidebar Style CSS
+---------------------------------------------------*/
+.site-container.nav-closed .sidebar {
+  width: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+  background: #fff;
+}
+.sidebar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+}
+.sidebar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px;
+  white-space: nowrap;
+}
+.sidebar ul li a svg {
+  width: 25px;
+  height: 25px;
+}
+.sidebar ul li a svg path {
+  fill: #023769;
+}
+.sidebar ul li a span {
+  margin-left: 16px;
+  width: 88px;
+  height: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  color: #023769;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.sidebar ul li a.active, .sidebar ul li a:hover {
+  background: #023769;
+  color: #fff;
+  border-radius: 10px;
+}
+.sidebar ul li a.active svg path, .sidebar ul li a:hover svg path {
+  fill: #fff;
+}
+.sidebar ul li a.active span, .sidebar ul li a:hover span {
+  color: #fff;
+}
+
+/*-------------------------------------------------
+ Header Style CSS
+---------------------------------------------------*/
+.site-container.nav-closed .header-logo {
+  width: 0;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 8px 15px rgba(103, 84, 226, 0.1);
+          box-shadow: 0px 8px 15px rgba(103, 84, 226, 0.1);
+  z-index: 9;
+}
+.header .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.header .header-logo .button-menu {
+  display: none;
+  border: 0;
+  cursor: pointer;
+}
+.header .header-logo .button-menu:focus {
+  outline: none;
+  border: none;
+}
+.header .header-logo .button-menu svg {
+  width: 25px;
+}
+.header .header-logo .button-menu svg path {
+  fill: #023769;
+}
+.header .header-logo .logo-img {
+  height: 50px;
+  width: 50px;
+  min-height: 32px;
+  min-width: 32px;
+  margin: 0 20px 0 30px;
+}
+.header .header-logo .logo-img path {
+  fill: #023769;
+}
+.header .header-logo .site-title {
+  color: #023769;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.header .wrapper-dropdown {
+  position: absolute;
+  right: 20px;
+}
+.header .wrapper-dropdown .user-info .profile-pic {
+  width: 36px;
+  margin-right: 10px;
+}
+.header .wrapper-dropdown .user-info .user-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #003E76;
+  margin-right: 10px;
+}
+.header .wrapper-dropdown .user-info .drop-down-icon {
+  width: 14px;
+  height: 18px;
+}
+.header .wrapper-dropdown .user-drop-down {
+  display: none;
+}
+
+/*-------------------------------------------------
+ Footer Style CSS
+---------------------------------------------------*/
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+footer .footer-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #003E76;
+  margin-top: 10px;
+}
+
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.page-content {
+  background: #F2FAFF;
+}
+.page-content .page-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: none;
+  color: #222021;
+}
+.page-content .dash-card-sec {
+  padding: 25px !important;
+}
+.page-content .dash-card-sec .card-sec-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: none;
+  color: #222021;
+  margin-bottom: 0;
+}
+.page-content .dash-card-sec .about-sec {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-content .dash-card-sec .about-sec .left-div {
+  background: #F9F9F9;
+  padding: 35px;
+}
+.page-content .dash-card-sec .about-sec .left-div img {
+  width: 150px;
+  height: 150px;
+}
+.page-content .dash-card-sec .about-sec p label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 160px;
+  color: #777777;
+}
+.page-content .dash-card-sec .about-sec p span {
+  color: #222021;
+}
+.page-content .dash-card-sec .about-sec .btn {
+  width: 180px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+.page-content .dash-card-sec .about-sec .btn-color {
+  background: #023769;
+}
+.page-content .dash-card-sec .info-sec label {
+  width: 220px;
+}
+.page-content .dash-card-sec .info-sec span {
+  color: #222021;
+}
+.page-content .dash-card-sec .info-btn {
+  margin-top: 20px;
+}
+.page-content .dash-card-sec .info-btn .btn {
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #023769;
+  border: 1px solid #023769;
+}
+.page-content .dash-card-sec .info-btn .btn-color {
+  color: #fff;
+  background: #023769;
+  margin-right: 20px;
+}
+.page-content .dash-card-sec .info-btn .btn-hover:hover {
+  color: #fff;
+  background: #023769;
+  margin-right: 20px;
+}
+
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.page-content {
+  background: #F2FAFF;
+}
+.page-content .page-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: none;
+  color: #222021;
+}
+
+.form-card {
+  text-align: left;
+}
+
+#heading {
+  text-transform: uppercase;
+  color: #023769;
+  font-weight: normal;
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+#msform fieldset {
+  background: #fff;
+  border: 0 none;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 80px 30px 80px;
+  position: relative;
+}
+#msform fieldset .info-sec {
+  text-align: left;
+}
+#msform fieldset .info-sec h3 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: full-size-kana;
+  color: #222;
+}
+#msform fieldset .info-sec p {
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #777777;
+}
+#msform fieldset .radio {
+  text-align: left;
+}
+#msform fieldset .radio label span {
+  margin-left: 15px;
+  color: #777777;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #023769;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+#msform input:focus,
+#msform textarea:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #023769;
+  outline-width: 0;
+}
+#msform .action-button {
+  width: 100px;
+  background-color: #023769;
+  color: #fff;
+  border: 1px solid #023769;
+  cursor: pointer;
+  padding: 15px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+  width: 160px;
+  height: 60px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+  background-color: #023769;
+}
+#msform .action-button .previous-icon,
+#msform .action-button .next-icon {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+#msform .action-button .previous-icon {
+  margin-right: 15px;
+}
+#msform .action-button .next-icon {
+  margin-left: 15px;
+}
+#msform .previous {
+  background: #fff;
+  color: #023769;
+  border: 1px solid #023769;
+}
+#msform .previous .previous-icon {
+  color: #023769;
+}
+#msform .previous:hover, #msform .previous:focus {
+  background-color: #023769;
+  color: #fff;
+}
+#msform .previous:hover .previous-icon, #msform .previous:focus .previous-icon {
+  color: #fff;
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 15px rgba(2, 55, 105, 0.1);
+          box-shadow: 0px 0px 15px rgba(2, 55, 105, 0.1);
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #023769;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: #023769;
+  font-weight: normal;
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+#progressbar .active {
+  color: #023769;
+}
+#progressbar li {
+  list-style-type: none;
+  width: 20%;
+  float: left;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  background: lightgrey;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgrey;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #023769;
+}
+#progressbar #account:before {
+  content: "1";
+}
+#progressbar #account:after {
+  left: 50%;
+}
+#progressbar #personal:before {
+  content: "2";
+}
+#progressbar #payment:before {
+  content: "3";
+}
+#progressbar #delivery:before {
+  content: "4";
+}
+#progressbar #confirm:before {
+  content: "5";
+}
+#progressbar #confirm:after {
+  left: auto;
+  right: 50%;
+  width: 50%;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #023769;
+}
+
+.fit-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.page-content {
+  background: #F2FAFF;
+}
+.page-content .page-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: none;
+  color: #222021;
+  margin: 30px 0;
+}
+.page-content .profile-card {
+  padding: 25px 25px 40px 25px !important;
+  border-radius: 10px;
+}
+.page-content .profile-card .card-sec-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: none;
+  color: #222021;
+  margin-bottom: 0;
+}
+.page-content .profile-card .card-form-top {
+  margin-bottom: 20px;
+}
+.page-content .profile-card .card-form-sec {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-content .profile-card .card-form-sec .profile-div {
+  background: #F9F9F9;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 20px 0;
+}
+.page-content .profile-card .card-form-sec .profile-div .profile-pic {
+  width: 130px;
+}
+.page-content .profile-card .card-form-sec .file-upload {
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #023769;
+  border: 1px solid #023769;
+}
+.page-content .profile-card .card-form-sec .file-upload input[type=file] {
+  display: none;
+}
+.page-content .profile-card .card-form-sec .file-upload.btn-color {
+  color: #fff;
+  background: #023769;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 55px;
+  width: 140px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.page-content .profile-card .card-form-sec .d-flex .form-group {
+  width: 100%;
+}
+.page-content .profile-card .card-form-sec .d-flex .m-right {
+  margin-right: 25px;
+}
+.page-content .profile-card .card-form-sec .form-group {
+  margin-bottom: 10px;
+}
+.page-content .profile-card .card-form-sec .form-group .form-control {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.page-content .profile-card .card-form-sec .form-group label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222021;
+}
+.page-content .profile-card .card-form-sec .form-group input {
+  color: #222021;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.page-content .profile-card .card-form-sec .form-group input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #777777;
+}
+.page-content .profile-card .card-form-sec .form-group input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #777777;
+}
+.page-content .profile-card .card-form-sec .form-group input::placeholder, .page-content .profile-card .card-form-sec .form-group input:-ms-input-placeholder, .page-content .profile-card .card-form-sec .form-group input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #777777;
+}
+.page-content .profile-card .card-form-sec .form-group select {
+  -webkit-appearance: listbox;
+     -moz-appearance: listbox;
+          appearance: listbox;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.page-content .profile-card .card-form-sec .form-group .date-picker-div {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.page-content .profile-card .card-form-sec .form-group .date-picker-div input {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+}
+.page-content .profile-card .card-form-sec .form-group .date-picker-div span {
+  line-height: 10px;
+}
+.page-content .profile-card .card-form-sec .form-group .upload-file-div {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background: #F9F9F9;
+}
+.page-content .profile-card .card-form-sec .form-group .upload-file-div input {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+}
+.page-content .profile-card .card-form-sec .form-group .upload-file-div span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 10px;
+  color: #777777;
+}
+.page-content .profile-card .card-form-sec .form-group .upload-file-div img {
+  width: 22px;
+  height: 17.29px;
+}
+.page-content .profile-card .card-form-sec .radio-sec label {
+  margin-right: 15px;
+  width: 300px;
+  line-height: 40px;
+}
+.page-content .profile-card .card-form-sec .radio-sec .upload-file-div {
+  width: auto !important;
+  background: #F9F9F9;
+  margin-left: 15px;
+  position: relative;
+}
+.page-content .profile-card .card-form-sec .radio-sec .upload-file-div input {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+}
+.page-content .profile-card .card-form-sec .radio-sec .upload-file-div span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 10px;
+  color: #777777;
+}
+.page-content .profile-card .card-form-sec .checkbox-sec input {
+  margin-right: 10px;
+}
+.page-content .profile-card .card-form-sec .form-submit-btn {
+  margin-top: 40px;
+}
+.page-content .profile-card .card-form-sec .form-submit-btn .btn {
+  width: 214px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #023769;
+  color: #fff;
+}
+.page-content .profile-card .card-form-sec .form-submit-btn .review-btn {
+  background: #023769;
+}
+.page-content .profile-card .card-form-sec .form-submit-btn .submit-btn {
+  background: #fff;
+  color: #023769;
+  margin-left: 20px;
+}
+.page-content .profile-card .card-form-sec .form-submit-btn .submit-btn:hover {
+  color: #fff;
+  background: #023769;
+}
+.page-content .last-card {
+  margin-bottom: 70px !important;
+}
+/*# sourceMappingURL=style.css.map */

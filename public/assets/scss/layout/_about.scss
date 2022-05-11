@@ -1,0 +1,56 @@
+/*-------------------------------------------------
+  About Section CSS
+---------------------------------------------------*/
+.ir-about {
+	position: relative;
+	.shape {
+		&:after {
+			width: 59px;
+			height: 129PX;
+			content: "";
+			background: url(../img/shape/1.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			z-index: 15;
+			position: absolute;
+			right: 195px;
+    		top: -60px;
+		}
+	}
+	.about-detail {
+		margin-right: 30px;
+		text-align: right;
+		.btn-4 {
+			margin-top: 15px;
+		}
+		h2, p {
+			text-align: right;
+		}
+		p {
+			font-size: 19px;
+			line-height: 28px;
+			font-weight: 400;
+			color: $text-666;
+		}
+	}
+	.about-img {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, calc(100% / 2 - 12px));
+		grid-row-gap: 24px;
+		grid-column-gap: 24px;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: $border-radius-10;
+		}
+		.img-1 {
+			grid-column-end: span 1;
+			grid-row-end: span 2;
+		}
+		.img-2, .img-3 {
+			grid-column-end: span 1;
+			grid-row-end: span 1;
+		}
+	}
+}

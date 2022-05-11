@@ -1,0 +1,91 @@
+/*-------------------------------------------------
+ About page Style CSS
+---------------------------------------------------*/
+.ir-ab-pg-head {
+    background-image: url('../../assets/img/bg/about.png');
+    background-position: center;
+    background-size: cover;
+}
+.ir-mission {
+    position: relative;
+    .about-bg {
+        &:after {
+            content: "";
+            width: 60%;
+            height: 100%;
+            background-color: $blue-bg;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 15px 0px 0px 15px;
+        }
+    }
+    .about-shape {
+        &:after {
+            width: 59px;
+            height: 129PX;
+            content: "";
+            background: url(../img/shape/3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 10;
+            position: absolute;
+            right: 270px;
+            top: -35px;
+        }
+    }
+    .mission-img {
+        padding: 25px;
+        background: $white;
+        border-radius: $border-radius-10;
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .mission-detail {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        .sec-title {
+            h2 {
+                color: $white;
+                text-align: right;
+            }
+        }
+        p {
+            color: $white;
+            text-align: right;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.ir-directors {
+    .directors-detail {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        .sec-title {
+            h2 {
+                color: $main-primary-color;
+                text-align: right;
+            }
+        }
+        p {
+            color: $text-666;
+            text-align: right;
+        }
+    }
+    .directors-img {
+        img {
+            width: 100%;
+            border-radius: $border-radius-10;
+        }
+    }
+}

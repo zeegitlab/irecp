@@ -1,0 +1,52 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.ir-faq-pg-head {
+	background-image: url('../../assets/img/bg/faq-bg.png');
+	background-size: cover;
+    background-position: bottom;
+}
+.ir-faq-sec {
+	.ir-faq-content {
+		.sec-info {
+			margin-bottom: 50px;
+			
+			.accordion-button::after {
+				width: 1.25rem;
+				height: 1.25rem;
+				background-image: url("../../assets/img/icons/plus.svg");				
+				position: absolute;
+				left: 0;
+			}
+			.accordion-button:not(.collapsed)::after {
+				width: 1.25rem;
+				height: 1.25rem;
+				background-image: url("../../assets/img/icons/minus.svg");
+				transform: none;
+				margin-top: 20px;
+				position: absolute;
+				left: 0;
+				box-shadow: none;
+			}
+
+			.accordion-button {
+				padding: 30px 0 30px 30px;
+				color: $main-text-color;
+				background-color: transparent;
+				box-shadow: none;
+				font-weight: 600;
+				font-size: 26px;
+				line-height: 28px;
+				text-align: right;
+			}
+
+			.accordion-body {
+				padding: 10px 10px 10px 30px;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 36px;
+			}
+		}
+	}
+}
+

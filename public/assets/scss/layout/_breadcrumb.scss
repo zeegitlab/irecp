@@ -1,0 +1,30 @@
+/*-------------------------------------------------
+  Partner Section CSS
+---------------------------------------------------*/
+.ir-main-pg-head {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	.ir-pg-head-bg {	
+		position: absolute;
+		width: 100%;
+		height: 100%;	
+		background: $ir-0-color;
+		opacity: 0.7;
+	}
+	.ir-pg-head {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: grid;
+		justify-content: center;
+		align-content: center;
+		.pg-title {
+			color: $text-white;
+			font-weight: 700;
+			font-size: 80px;
+			line-height: 96px;
+		}
+	}
+}

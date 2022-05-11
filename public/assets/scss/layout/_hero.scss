@@ -1,0 +1,158 @@
+/*-------------------------------------------------
+  Site Hero Section CSS
+---------------------------------------------------*/
+.ir-hero {
+	position: relative;
+	z-index: 15;
+	// .hero-shape{
+	// 	position: relative;
+	// 	z-index: 1;
+	// 	&:after {
+	// 		content: "";
+	// 		width: 100%;
+	// 		height: 202px;
+	// 		background: url(../img/shape/cover.png) top center no-repeat;
+	// 		background-size: 100% 100%;
+	// 		position: absolute;
+	// 		bottom: 0;
+	// 		left: 0;
+	// 		z-index: 1;
+	// 	}
+	// }
+	.ir-main-slider {
+		.slide {
+			width: 100%;
+			height: calc(100vh - 166px);
+			// background-blend-mode: overlay;
+			// background: rgba(0, 29, 58, .8);
+			position: relative;
+			display: flex;
+			align-items: center;
+			&:after {
+				width: 300px;
+				height: 300PX;
+				content: "";
+				background: url(../img/logo/2.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				z-index: 10;
+				position: absolute;
+				left: 0;
+				bottom: 16px;
+			}
+			&:before {
+				content: "";
+				width: 100%;
+				height: 202px;
+				background: url(../img/shape/cover.png) top center no-repeat;
+				background-size: 100% 100%;
+				background-attachment: fixed;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				z-index: 11;
+			}
+			.ir-overlay {
+				&:after {
+					width: 100%;
+					height: 100%;
+					content: "";
+					background: url(../img/hero/overlay.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+					z-index: 10;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+			.ir-slide-detail {
+				display: block;
+				position: relative;
+				text-align: right;
+				z-index: 11;
+				.ir-slide-title {
+					margin-bottom: 30px;
+					font-size: 60px;
+					line-height: 50px;
+					font-weight: 700;
+					font-family: $fontfamily-lato;
+					color: $white;
+				}
+				.ir-slide-stitle {
+					margin-bottom: 15px;
+					font-size: 70px;
+					line-height: 84px;
+					font-weight: 700;
+					font-family: $fontfamily-lato;
+					color: $white;
+				}
+				p {
+					margin-bottom: 30px;
+					font-size: 30px;
+					line-height: 36px;
+					font-weight: 700;
+					font-family: $fontfamily-lato;
+					color: $white;
+				}
+				a {
+					font-size: 15px;
+					line-height: 21px;
+					font-weight: 700;
+					font-family: $fontfamily-lato;
+					color: $white;
+				}
+			}
+		}
+		.slide-1 {
+			background-image: url(../img/hero/1.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+
+		}
+		.slide-2 {
+			background-image: url(../img/hero/2.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.slide-3 {
+			background-image: url(../img/hero/3.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.owl-dots {
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			bottom: 30px;
+			left: 0;
+			right: 0;
+			z-index: 12;
+			button {
+				width: 15px;
+				height: 15px;
+				display: inline-block;
+				border-radius: $border-radius-15;
+				opacity: 1;
+				border: none;
+				margin: 0 2.5px !important;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				-webkit-transition: all 0.3s ease 0s;
+				transition: all 0.3s ease 0s;
+				background-color: #202020;
+				position: relative;
+			}
+			button.active {
+				width: 30px;
+				background-color: $blue-bg;
+			}
+		}
+	}
+}

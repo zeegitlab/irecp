@@ -1,0 +1,283 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+
+$color-1 : $font-color-1;
+$bg-color-1 : $bg-color-1;
+
+.page-content {
+  background: $bg-color-F2FAFF;
+  .page-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: none;
+    color: $color-222021;
+  }
+}
+
+.form-card {
+  text-align: left;
+}
+
+#heading {
+  text-transform: uppercase;
+  color: $color-1;
+  font-weight: normal;
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+
+  fieldset {
+    background: $white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0 80px 30px 80px;
+    position: relative;
+
+    .info-sec {
+      text-align: left;
+      h3 {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        text-transform: full-size-kana;
+        color: $black;
+      }
+      p {
+        margin-top: 35px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-777;
+      }
+    }
+    .radio {
+      text-align: left;
+      label {
+        span {
+          margin-left: 15px;
+          color: $color-777;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      } 
+    }  
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
+
+  input,
+  textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid $ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    box-sizing: border-box;
+    color: $color-1;
+    background-color: $white;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  input:focus,
+  textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid $color-1;
+    outline-width: 0;
+  }
+
+  .action-button {
+    width: 100px;
+    background-color: $bg-color-1;
+    color: $white;
+    border: 1px solid $bg-color-1;
+    cursor: pointer;
+    padding: 15px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    width: 160px;
+    height: 60px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-color-1;
+    }
+
+    .previous-icon,
+    .next-icon {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 28px;
+      align-items: center;
+      color: $white;
+    }
+    .previous-icon {
+      margin-right: 15px;
+    }
+    .next-icon {
+      margin-left: 15px;
+    }
+  }
+
+  .previous {
+    background: $white;
+    color: $color-1;
+    border: 1px solid $bg-color-1;
+
+    .previous-icon {
+      color: $color-1;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $bg-color-1;
+      color: $white;
+      .previous-icon {
+        color: $white;
+      }
+    }
+  }
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(2, 55, 105, 0.1);
+}
+
+.fs-title {
+  font-size: 25px;
+  color: $color-1;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: $color-1;
+  font-weight: normal;
+}
+
+.steps {
+  font-size: 25px;
+  color: $gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.fieldlabels {
+  color: $gray;
+  text-align: left;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: $lightgrey;
+
+  .active {
+    color: $color-1;
+  }
+
+  li {
+    list-style-type: none;
+    width: 20%;
+    float: left;
+    position: relative;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:before {
+      width: 50px;
+      height: 50px;
+      line-height: 45px;
+      display: block;
+      font-size: 20px;
+      color: $white;
+      background: $lightgrey;
+      border-radius: 50%;
+      margin: 0 auto 10px auto;
+      padding: 2px;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $lightgrey;
+      position: absolute;
+      left: 0;
+      top: 25px;
+      z-index: -1;      
+    }
+
+    &.active:before,
+    &.active:after {
+      background: $color-1;
+    }
+
+  }
+
+  #account:before {
+    content: "1";
+  }
+  #account:after {
+    left: 50%;
+  }
+
+  #personal:before {
+    content: "2";
+  }
+
+  #payment:before {
+    content: "3";
+  }
+
+  #delivery:before {
+    content: "4";
+  }
+
+  #confirm:before {
+    content: "5";
+  }
+
+  #confirm:after {
+    left: auto;
+    right: 50%;
+    width: 50%;
+  }
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: $color-1;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}

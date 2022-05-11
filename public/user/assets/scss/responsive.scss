@@ -1,0 +1,219 @@
+/*-------------------------------------------------
+ Responsive Style CSS
+---------------------------------------------------*/
+
+// Utilities ( Import Utilities )
+@import "utilities/_variables";
+@import "utilities/_mixins";
+
+
+@media only screen and (max-width: 1600px) {
+
+}
+@media only screen and (max-width: 1399px) {
+
+}
+@media only screen and (max-width: 1366px) {
+
+}
+@media only screen and (max-width: 1199px) {
+
+}
+@media only screen and (max-width: 991px) {
+    .page-content {
+        width: 100vw;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .header-logo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 680px) {
+
+}
+@media only screen and (max-width: 575px) {
+
+    .sidebar {
+        position: absolute;
+        z-index: 8;
+    }
+    .d-flex {
+        display: block !important;
+    }
+
+    .header {
+        .header-logo {
+            .button-menu {
+                display: block;
+            }
+        }
+    }
+
+    #progressbar {
+        padding: 1rem;
+        li {
+            font-size: 12px;
+            &::before {
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    #msform {
+        fieldset {
+            padding: 0 15px 30px 15px;
+            .info-sec {
+                h3 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            .radio label span {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        .action-button {
+            padding: 4px 5px;
+            margin-top: 30px;
+            width: 100px;
+            height: 40px;
+        }
+        textarea {
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .site-container {
+        .page-content {
+            padding-bottom: 100px;
+        }
+    }
+
+    .page-content {
+        .profile-card {
+            .card-form-sec {
+                .file-upload.btn-color {
+                    padding: 4px 5px;
+                    width: 100px;
+                    height: 40px;
+                    line-height: 24px;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+                .second-title {
+                    margin-top: 25px;
+                }
+
+                .checkbox-sec {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+
+                .form-submit-btn {
+                    margin-top: 20px;
+                    text-align: center;
+                    .submit-btn,
+                    .review-btn {
+                        padding: 4px 5px;
+                        height: 40px;
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+
+                    .review-btn {
+                        margin-bottom: 20px;
+                    }
+                    .submit-btn {
+                        margin: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .radio-sec {
+                    display: flex !important;
+                    margin-bottom: 15px;
+                    label {
+                        margin-right: 10px;
+                        width: 170px;
+                        line-height: 20px;
+                    }
+                    .upload-file-div {
+                        margin-left: 10px;
+                        padding: 5px;
+
+                        span {
+                            font-size: 11px;
+                            margin-right: 5px;
+                        }
+                        svg {
+                            width: 15px;
+                        }
+                        input {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-content {
+        .dash-card-sec {
+            .about-sec {
+                display: block !important;
+                .left-div {
+                    margin-bottom: 30px;
+                }
+
+                .btn {
+                    margin-top: 15px;
+                    padding: 5px 10px;
+                    height: 40px;
+                    line-height: 28px;
+                    font-size: 14px;
+                }
+            }
+            .info-btn {
+                text-align: center;
+                .btn {
+                    padding: 5px 10px;
+                    height: 40px;
+                    line-height: 28px;
+                    font-size: 14px;
+                }
+                .btn-color {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+
+}
+@media only screen and (max-width: 420px) {
+
+}
+@media only screen and (max-width: 390px) {
+
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 360px) {
+
+}
+@media only screen and (max-width: 320px) {
+
+}
+@media only screen and (max-width: 280px) {
+
+}

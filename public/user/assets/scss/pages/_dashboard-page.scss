@@ -1,0 +1,106 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+
+$color-1 : $font-color-1;
+$bg-color-1 : $bg-color-1;
+
+.page-content {
+  background: $bg-color-F2FAFF;
+
+  .page-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: none;
+    color: $color-222021;
+  }
+
+  .dash-card-sec {
+    padding: 25px !important;
+
+    .card-sec-title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      text-transform: none;
+      color: $color-222021;
+      margin-bottom: 0;
+    }
+
+    .about-sec {
+      display: inline-flex;
+      justify-content: space-between;
+
+      .left-div {
+        background: $bg-color-F9F9F9;
+        padding: 35px;
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+        p {
+          label {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            width: 160px;
+            color: $color-777;
+          }
+          span {
+            color: $color-222021;
+          }
+        }
+        .btn {
+          width: 180px;
+          height: 50px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 30px;
+          color: $white;
+        }
+
+        .btn-color {
+          background: $blue-bg;
+        }
+      
+    }
+
+    .info-sec {
+      label {
+        width: 220px;
+      }
+      span {
+        color: $color-222021;
+      }
+    }
+
+    .info-btn {
+      margin-top: 20px;
+      .btn {
+        height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        color: $blue-bg;
+        border: 1px solid $blue-bg;
+      }
+
+      .btn-color {        
+        color: $white;
+        background: $blue-bg;
+        margin-right: 20px;
+      }
+
+      .btn-hover { 
+        &:hover {       
+          color: $white;
+          background: $blue-bg;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

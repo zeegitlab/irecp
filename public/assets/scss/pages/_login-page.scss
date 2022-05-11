@@ -1,0 +1,278 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.ir-header-login {
+	.ir-header-top {
+		position: relative;
+	}
+}
+
+.ir-login-sec {
+	height: 100%;
+	min-height: 100vh;
+	padding: 70px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../img/bg/login-bg.png');
+	background-size: 60% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right;
+	// overflow: auto;
+	.ir-row {
+		margin-left: 15px;
+		display: flex;
+		align-items: center;
+		.ir-col {
+			flex: 0 0 auto;
+    		width: 33.33333333%;
+			padding: 0 45px;
+		}
+		.ir-col-detail {
+			flex: 0 0 auto;
+    		width: 42%;
+			padding: 0 45px 0 0;
+		}
+	}
+	.ir-order-1 {
+		order: 1;
+	}
+	.ir-order-2 {
+		order: 2;
+	}
+	.login-content-space{
+		// margin: 70px 0;
+	}
+	.login-content {
+		padding: 30px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+		border-radius: $border-radius-15;
+		background: $trasperent-white;
+		.form-group {
+			.form-control {
+				height: 44px;
+				width: 100%;
+				margin-top: 5px;
+				border-radius: $border-radius-5;
+				display: grid;
+				justify-content: center;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 400;
+				color: $text-color;
+				font-family: $fontfamily-lato;
+				border-color: $border-ddd;
+				&:focus {
+					border-color: #000;
+					box-shadow: none;
+					background-color: #fff;
+				}
+				&::placeholder {
+					color: $text-color;
+				}
+			}	
+		}
+		.ir-form-title {
+			text-align: center;
+			margin: 15px 0 45px;
+			h4 {
+				margin: 0;
+				font-size: 50px;
+				line-height: 60px;
+				font-weight: 700;
+				color: $main-text-color;
+			}
+		}
+		.ir-login-body {
+			width: 100%;
+			.ir-login-form {
+				display: flex;
+				flex-direction: column;
+				.form-group {
+					margin-bottom: 20px;
+					label {
+						margin-left: 5px;
+						font-size: 14px;
+						line-height: 22px;
+						font-weight: 400;
+						color: $main-text-color;
+					}
+					.svg-img {
+						width: 15px;
+						height: 15px;
+						margin-bottom: 5px;
+					}
+					.form-check-input {
+						width: 20px;
+						height: 20px;
+						&:focus {
+							outline: none;
+							box-shadow: none;
+						}
+					}
+					.forgot {
+						font-size: 16px;
+						line-height: 27px;
+						font-weight: 700;
+						color: $blue-bg;
+					}
+				}
+				.btn-grp {
+					display: flex;
+					flex-direction: column;
+				}
+				.with-check {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				}
+				.ir-btn-submit {
+					width: 180px;
+					height: 50px;
+					margin: auto;
+					border-radius: $border-radius-5;
+					background: $blue-bg;
+					border-color: $blue-bg;
+					font-size: 18px;
+					line-height: 21px;
+					font-weight: 500;
+					font-family: $fontfamily-lato;
+					box-shadow: 0px 10px 24px rgba(2, 55, 105, 0.5);
+					&:hover {
+						box-shadow: 0px 10px 24px rgba(2, 55, 105, 0.5);
+					}
+				}
+			}
+		}
+		.login-detail {
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 400;
+			color: $text-color;
+			text-align: center;
+			a {
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 700;
+				color: $blue-bg;
+			}
+		}
+		.ir-login-forgot {
+			display: flex;
+			justify-content: center;
+			.form-control {
+				display: flex;
+				background: transparent;
+				border: none;
+				justify-content: space-between;
+			}
+			.ir-keep-login {
+				.form-check-label {
+					font-family: $fontfamily-lato;
+					font-size: 16px;
+					font-style: normal;
+					line-height: 26px;
+					letter-spacing: 0em;
+					text-align: left; 
+					color: $ir-0-color;
+					font-weight: 400;
+				}
+			}
+			.ir-forgot {
+				font-family: $fontfamily-lato;
+				font-size: 16px;
+				font-style: normal;
+				line-height: 26px;
+				letter-spacing: 0em;
+				text-align: left; 
+				color: $ir-0-color;
+				font-weight: 400;
+			}
+		}
+		.ir-signup-help {
+			display: flex;
+			justify-content: center;
+			.form-control {
+				display: flex;
+				background: transparent;
+				border: none;
+				justify-content: space-between;
+				a {
+					margin-left: 10px;
+					font-family: $fontfamily-lato;
+					font-size: 18px;
+					font-style: normal;
+					line-height: 21px;
+					font-weight: 700;
+					letter-spacing: 0em;
+					text-align: left;
+					color: $blue-bg;
+				}
+				p{
+					font-size: 18px;
+					line-height: 21px;
+					font-weight: 400;
+					color: $text-dark;
+				}
+			}
+			.ir-signup {
+
+			}
+			.ir-help {
+
+			}
+		}
+		.ir-store-link {
+			.form-control {
+				display: flex;
+				background: transparent;
+				border: none;
+				justify-content: space-between;
+			}
+			.ir-store-btn {
+				.ir-store-img {
+					width: 169px;
+					height: 72px;
+				}
+			}
+		}
+	}
+	.ir-login-info {
+		max-width: 680px;
+		height: 100%;
+		padding-bottom: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		img {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 30px;
+		}
+		h2{
+			font-size: 60px;
+			line-height: 72px;
+			font-weight: 700;
+			color: $main-text-color;
+		}		
+		p{
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 400;
+			color: $text-color;
+		}
+	}
+}
+
+.ir-regi-sec {
+	.ir-row {
+		align-items: flex-start;
+	}
+}

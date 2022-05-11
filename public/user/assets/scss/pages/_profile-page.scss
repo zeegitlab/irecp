@@ -1,0 +1,235 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+
+$color-1 : $font-color-1;
+$bg-color-1 : $bg-color-1;
+
+.page-content {
+  background: $bg-color-F2FAFF;
+
+  .page-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: none;
+    color: $color-222021;
+    margin: 30px 0;
+  }
+
+  .profile-card {
+    padding: 25px 25px 40px 25px !important;
+    border-radius: 10px;
+    .card-sec-title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      text-transform: none;
+      color: $color-222021;
+      margin-bottom: 0;
+    }
+
+    .card-form-top {
+      margin-bottom: 20px;
+    }
+    .card-form-sec {
+      display: inline-flex;
+      justify-content: space-between;
+
+      .profile-div {
+        background: $bg-color-F9F9F9;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 20px 0;
+        .profile-pic {
+          width: 130px;
+        }
+      }
+      .file-upload {
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 32px;
+        color: $blue-bg;
+        border: 1px solid $blue-bg;
+
+        input[type="file"] {
+          display: none;
+        }
+      }
+      .file-upload.btn-color {        
+        color: $white;
+        background: $blue-bg;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 55px;
+        width: 140px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .d-flex {
+        .form-group {
+          width: 100%;
+        }
+        .m-right {
+          margin-right: 25px;
+        }
+      }
+      .form-group {
+        margin-bottom: 10px;
+        .form-control {
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+        label {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: $color-222021;
+        }
+
+        input {
+          color: $color-222021;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+
+          &::placeholder,
+          &:-ms-input-placeholder,
+          &::-ms-input-placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $color-777;
+          }
+        }
+
+        select {
+          appearance: listbox;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .date-picker-div {
+          position: relative;
+          display: inline-flex;
+          justify-content: space-between;
+          cursor: pointer;
+          margin-top: 10px;
+          margin-bottom: 15px;  
+          input {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            margin: 0;
+            opacity: 0;
+          }
+          span {
+            line-height: 10px;
+          }
+          img {
+
+          }
+        }
+
+        .upload-file-div {
+          position: relative;
+          display: inline-flex;
+          justify-content: space-between;
+          cursor: pointer;
+          margin-top: 10px;
+          margin-bottom: 15px;   
+          background: $bg-color-F9F9F9;   
+          input {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            margin: 0;
+            opacity: 0;
+          }          
+          span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 10px;
+            color: $color-777;
+          }
+          img {
+            width: 22px;
+            height: 17.29px;
+          }
+        }
+      }
+
+      .radio-sec {
+        label {
+          margin-right: 15px;
+          width: 300px;
+          line-height: 40px;
+        }
+        .upload-file-div {
+          width: auto !important;
+          background: $bg-color-F9F9F9;
+          margin-left: 15px;
+          position: relative;
+          input {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            margin: 0;
+            opacity: 0;
+          }
+          span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 10px;
+            color: $color-777;
+          }
+        }
+      } 
+
+      .checkbox-sec {
+        input {
+          margin-right: 10px;
+        }
+      }
+
+      .form-submit-btn {
+        margin-top: 40px;
+        .btn {
+          width: 214px;
+          height: 60px;
+          border-radius: 8px;
+          border: 1px solid $bg-color-1;
+          color: $white;
+        }
+        .review-btn {
+          background: $bg-color-1;
+        }
+        .submit-btn {
+          background: $white;
+          color: $color-1;
+          margin-left: 20px;
+          &:hover {
+            color: $white;
+            background: $bg-color-1;
+          }
+        }
+      }
+    }
+  }
+
+  .last-card {
+    margin-bottom: 70px !important;
+  }
+}

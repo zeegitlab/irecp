@@ -1,0 +1,35 @@
+/*-------------------------------------------------
+ Team page Style CSS
+---------------------------------------------------*/
+.ir-tc-pg-head {
+	background-image: url('../../assets/img/bg/terms-condition-bg.png');
+}
+.ir-tc-sec {
+	.ir-tc-content {
+		.sec-info {
+			margin-bottom: 50px;
+			.sec-title {
+				h3 {
+					font-weight: 700;
+					font-size: 36px;
+					line-height: 43px;
+					text-align: right;
+					color: $main-text-color;
+					margin-bottom: 20px;
+				}
+			}
+			.sec-desc {
+				p {
+					font-weight: 500;
+					font-size: 19px;
+					line-height: 30px;
+					/* or 156% */
+					text-align: right;
+					color: $text-666;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
